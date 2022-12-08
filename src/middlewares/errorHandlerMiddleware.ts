@@ -1,7 +1,7 @@
 import { NextFunction, Request, Response } from 'express';
 
 type ERRORS = {
-  [key: string]: number
+  [key: string]: number;
 };
 
 const ERRORS: ERRORS = {
@@ -10,7 +10,7 @@ const ERRORS: ERRORS = {
   not_found: 404,
   bad_request: 400,
   token_invalid: 498,
-  unprocessable_entity: 422
+  unprocessable_entity: 422,
 };
 
 export default function errorHandlerMiddleware(
@@ -25,4 +25,4 @@ export default function errorHandlerMiddleware(
   if (!statusCode) statusCode = 500; // any other types
 
   return res.sendStatus(statusCode); // internal server error
-};
+}
