@@ -20,3 +20,25 @@ npm run generate_db
 ```
 npm run dev
 ```
+
+------------------------------------------------------------------------------------
+
+### Getting start:
+
+#### Step 1: Run the command below to install all dependencies.
+```
+npm i
+```
+
+#### Step 2: Create a .env file in the root folder using the .env-exemples as reference.
+
+#### Step 3: Run the command below to generate the database.
+```
+npm run generate_db
+```
+
+#### Step 4: Run the command below to start the API.
+```
+npm run dev
+```
+
